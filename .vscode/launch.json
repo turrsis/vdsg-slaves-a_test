@@ -1,0 +1,59 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387 and https://code.visualstudio.com/docs/nodejs/nodejs-debugging
+    "version": "0.2.0",
+    "configurations": [{
+        "name": "DEBUG",
+        "type": "node",
+        "request": "launch",
+        "runtimeExecutable": "npm",
+        "stopOnEntry": true,
+        "runtimeArgs": [
+            "run-script",
+            "serve"
+        ],
+        "cwd": "${workspaceFolder}",
+        "port": 9229
+    }, {
+        "name": "--- unit -> all",
+        "type": "node",
+        "request": "launch",
+        "program": "${workspaceRoot}/node_modules/mochapack/bin/mochapack",
+        "args": [
+            "--webpack-config", "./plugin/test/unit/webpack.config.js",
+            "--require", "./plugin/test/unit/setup.js",
+            "./plugin/test/unit/**/*.spec.js",
+            "--timeout", "300000",
+        ],
+        "stopOnEntry": true,
+        "sourceMaps": true,
+        "preLaunchTask": null,
+        "runtimeExecutable": null,
+        "runtimeArgs": [
+        ],
+        "env": { "NODE_ENV": "test"},
+        "console": "integratedTerminal",
+        "outFiles": []
+    }, {
+        "name": "--- unit -> current",
+        "type": "node",
+        "request": "launch",
+        "program": "${workspaceRoot}/node_modules/mochapack/bin/mochapack",
+        "args": [
+            "--webpack-config", "./plugin/test/unit/webpack.config.js",
+            "--require", "./plugin/test/unit/setup.js",
+            "${file}",
+            "--timeout", "300000",
+        ],
+        "stopOnEntry": true,
+        "sourceMaps": true,
+        "preLaunchTask": null,
+        "runtimeExecutable": null,
+        "runtimeArgs": [
+        ],
+        "env": { "NODE_ENV": "test"},
+        "console": "integratedTerminal",
+        "outFiles": []
+    }]
+}
