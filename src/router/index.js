@@ -27,15 +27,21 @@ export default new Router({
         path: '*',
         name: 'Error'
     }, {
+        path: '/page1',
+        name: 'page1',
+        components: {
+            header: () => navigation,
+            default: () => utils.interopDefault(import('../views/Page1.vue'))
+        },
+        meta: { layout: 'simpleOneView' }
+    }, {
         path: '/cummulative',
         name: 'cummulative',
         components: {
             header: () => navigation,
             default: () => utils.interopDefault(import('../views/Cummulative.vue'))
         },
-        meta: {
-            layout: 'simple'
-        }
+        meta: { layout: 'simple' }
     }, {
         path: '/components/Btn',
         name: 'components/Btn',
@@ -43,9 +49,7 @@ export default new Router({
             header: () => navigation,
             default: () => utils.interopDefault(import('../components/Btn.vue'))
         },
-        meta: {
-            layout: 'simple'
-        }
+        meta: { layout: 'simple' }
     }, {
         path: '/components/Grid',
         name: 'components/Grid',
@@ -53,9 +57,7 @@ export default new Router({
             header: () => navigation,
             default: () => utils.interopDefault(import('../components/Grid.vue'))
         },
-        meta: {
-            layout: 'simple'
-        }
+        meta: { layout: 'simple' }
     }, {
         path: '/components/Tabs',
         name: 'components/Tabs',
@@ -63,9 +65,7 @@ export default new Router({
             header: () => navigation,
             default: () => utils.interopDefault(import('../components/Tabs.vue'))
         },
-        meta: {
-            layout: 'simple'
-        }
+        meta: { layout: 'simple' }
     }, {
         path: '/components/Carousel',
         name: 'components/Carousel',
@@ -73,18 +73,14 @@ export default new Router({
             header: () => navigation,
             default: () => utils.interopDefault(import('../components/Carousel.vue'))
         },
-        meta: {
-            layout: 'simple'
-        }
+        meta: { layout: 'simple' }
     }, {
         path: '/components/AppBar',
         name: 'components/AppBar',
         components: {
             default: () => utils.interopDefault(import('../components/AppBar.vue'))
         },
-        meta: {
-            layout: 'simpleOneView'
-        }
+        meta: { layout: 'simpleOneView' }
     }, {
         path: '/components/Card',
         name: 'components/Card',
@@ -92,17 +88,13 @@ export default new Router({
             header: () => navigation,
             default: () => utils.interopDefault(import('../components/Card.vue'))
         },
-        meta: {
-            layout: 'simple'
-        }
+        meta: { layout: 'simple' }
     }, {
         path: '/components/SimpleTable',
         name: 'components/SimpleTable',
         components: {
             default: () => utils.interopDefault(import('../components/SimpleTable.vue'))
         },
-        meta: {
-            layout: 'simple'
-        }
+        meta: { layout: 'simple' }
     }]
 })

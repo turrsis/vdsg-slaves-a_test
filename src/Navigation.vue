@@ -4,6 +4,7 @@
             <span></span>
             <div>
                 <router-link to="/">Home</router-link>
+                <router-link to="/page1">Page1</router-link>
                 <router-link to="/cummulative">Cummulative</router-link>
             </div>
         </div>
