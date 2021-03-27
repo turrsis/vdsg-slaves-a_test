@@ -3,7 +3,6 @@
         v-designer.layout.true
         class="simpleLayout"
     >
-        <p>SimpleLayout</p>
         <header>
             <router-view name="header" />
         </header>
