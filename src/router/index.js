@@ -93,6 +93,7 @@ export default new Router({
         path: '/components/SimpleTable',
         name: 'components/SimpleTable',
         components: {
+            header: () => navigation,
             default: () => utils.interopDefault(import('../components/SimpleTable.vue'))
         },
         meta: { layout: 'simple' }
