@@ -1,15 +1,16 @@
-const adminSlaveServer = require('admin-server-common').directives.installer
-// X-Frame-Options
-// Access-Control-Allow-Origin
-// Access-Control-Allow-Credentials: true
-//'Content-Security-Policy': "Content-Security-Policy: default-src 'self'; *;"
+const server = require('./src/plugins/designer/server.js')
+
 module.exports = {
-  chainWebpack: adminSlaveServer.installToVueCli,
+  transpileDependencies: [
+    'vuetify'
+  ],
+  chainWebpack: server.chainWebpack,
   configureWebpack: {
     //devtool: '#eval-source-map' // 'source-map'
+    devtool: '#eval-cheap-module-source-map'
   },
   devServer: {
     host: 'localhost',
     port: 8086,
-  }
+  },
 }
