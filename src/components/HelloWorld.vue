@@ -7,7 +7,11 @@
           class="my-3"
           contain
           height="200"
-        />
+        >
+        <template v-slot:placeholder>
+          <p>XXX</p>
+        </template>
+        </v-img>
       </v-col>
 
       <v-col class="mb-4">
