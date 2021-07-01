@@ -1,5 +1,5 @@
 <template>
-  <v-app>
+  <v-app v-designer.true>
     <v-main>
       <!--<HelloWorld/>-->
       <router-view/>

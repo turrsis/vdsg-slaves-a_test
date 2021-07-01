@@ -1,35 +1,6 @@
 <template>
-  <v-container v-designer.true>
-    <v-row class="text-center">
-      <v-col cols="12">
-        <v-img
-          :src="logo"
-          class="my-3"
-          contain
-          height="200"
-        >
-        <template v-slot:placeholder>
-          <p>XXX</p>
-        </template>
-        </v-img>
-      </v-col>
-
-      <v-col class="mb-4">
-        <h1 class="display-2 font-weight-bold mb-3">
-          <div>Welcome to the Vuetify 3 Alpha</div>
-        </h1>
-
-
-        <p class="subheading font-weight-regular">
-          For help and collaboration with other Vuetify developers,
-          <br>please join our online
-          <a
-            href="https://community.vuetifyjs.com"
-            target="_blank"
-          >Discord Community</a>
-        </p>
-      </v-col>
-
+  <v-container v-designer.true style="border: 2px solid red;">
+    <v-row class="text-center" style="border: 2px dotted blue; margin: 10px;">
       <v-col
         class="mb-5"
         cols="12"
@@ -37,18 +8,6 @@
         <h2 class="headline font-weight-bold mb-5">
           What's next?
         </h2>
-
-        <v-row justify="center">
-          <a
-            v-for="(next, i) in whatsNext"
-            :key="i"
-            :href="next.href"
-            class="subheading mx-3"
-            target="_blank"
-          >
-            {{ next.text }}
-          </a>
-        </v-row>
       </v-col>
 
       <v-col
@@ -58,39 +17,6 @@
         <h2 class="headline font-weight-bold mb-5">
           Important Links
         </h2>
-
-        <v-row justify="center">
-          <a
-            v-for="(link, i) in importantLinks"
-            :key="i"
-            :href="link.href"
-            class="subheading mx-3"
-            target="_blank"
-          >
-            {{ link.text }}
-          </a>
-        </v-row>
-      </v-col>
-
-      <v-col
-        class="mb-5"
-        cols="12"
-      >
-        <h2 class="headline font-weight-bold mb-5">
-          Ecosystem
-        </h2>
-
-        <v-row justify="center">
-          <a
-            v-for="(eco, i) in ecosystem"
-            :key="i"
-            :href="eco.href"
-            class="subheading mx-3"
-            target="_blank"
-          >
-            {{ eco.text }}
-          </a>
-        </v-row>
       </v-col>
     </v-row>
   </v-container>
@@ -101,7 +27,52 @@ import logo from '../assets/logo.svg'
 
 export default {
   name: 'HelloWorld',
-
+props: {
+        pBoolean: {
+            type: Boolean,
+            default: false,
+        },
+        'pbkt-0': {
+            type: Boolean,
+            default: false,
+        },
+        'pbkt-1': {
+            type: Boolean,
+            default: false,
+        },
+        'pbkt-2': {
+            type: Boolean,
+            default: false,
+        },
+        pString: {
+            type: String,
+            default: '',
+        },
+        pStringKeyToggle: {
+            type: String,
+            default: '',
+        },
+        pStringKeyOptions: {
+            type: String,
+            default: '',
+        },
+        pNumberKey: {
+            type: Number,
+            default: 11,
+        },
+        pNumberStringKey: {
+            type: [Number, String],
+            default: 22,
+        },
+        pNumberKeyUnits: {
+            type: [Number, String],
+            default: 33,
+        },
+        pBooleanStringKey: {
+            type: [Boolean, String],
+            default: 'true',
+        }
+    },
   data: () => ({
     ecosystem: [
       {
