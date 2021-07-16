@@ -56,16 +56,16 @@
         </v-col>
       </v-row>
     </v-container>
+    <TContainer />
   </v-sheet>
 </template>
 
 <script>
-// @ is an alias to /src
+import TContainer from '@/components/TContainer.vue'
 
 export default {
   name: 'Home',
-  components: {
-  }
+  components: { TContainer }
 }
 </script>
 <style lang="less">
