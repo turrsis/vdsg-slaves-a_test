@@ -43,16 +43,18 @@
       </v-row>
       <v-row class="text-left" dense>
         <v-col cols="6">
-          <v-img
+          xxxxxxxxxxxxxxxxxxxx
+          <!--<v-img
             :aspect-ratio="16/9"
             src="https://cdn.vuetifyjs.com/images/parallax/material.jpg"
-          ></v-img>
+          ></v-img>-->
         </v-col>
         <v-col cols="6">
-          <v-img
+          yyyyyyyyyyyyyyyyyyyyyy
+          <!--<v-img
             :aspect-ratio="16/9"
             src="https://cdn.vuetifyjs.com/images/parallax/material2.jpg"
-          ></v-img>
+          ></v-img>-->
         </v-col>
       </v-row>
     </v-container>
@@ -65,11 +67,29 @@ import TContainer from '@/components/TContainer.vue'
 
 export default {
   name: 'Home',
-  components: { TContainer }
+  components: { TContainer },
+  data: () => ({
+        homeStr: '***home***',
+        homeNum: 777,
+        homeBool: true,
+        homeObj: {
+          'ho-str': '--ho-str--',
+          'ho-bool': true,
+          'ho-num': 888,
+          'ho-arr': ['a', 'b', 'c'],
+        },
+        homeArr: [
+          'ha-1',
+          true,
+          321,
+          {
+            'ha-ho-str': '--ha-ho-str--',
+            'ha-ho-bool': true,
+            'ha-ho-num': 999,
+          } 
+        ]
+  }),
 }
 </script>
 <style lang="less">
-  .home {
-    
-  }
 </style>

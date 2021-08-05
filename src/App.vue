@@ -47,6 +47,23 @@
   </v-app>
 </template>
 
+<script>
+export default {
+  name: 'App',
+  data: () => ({
+        appStr: '***app***',
+        appNum: 222,
+        appBool: true,
+        appObj: {
+          'ao_Str-1': 'v-aa1',
+          'ao_Num': 333,
+          'ao_Bool': true,
+        },
+        appArr: ['aa-1', 'aa-2']
+  }),
+}
+</script>
+
 <style lang="scss">
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
