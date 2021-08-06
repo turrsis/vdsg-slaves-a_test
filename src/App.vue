@@ -1,6 +1,8 @@
 <template>
   <v-app v-designer.true :full-height="true">
     <v-app-bar
+        flat
+        virt-attr-test="q3"
         absolute
         color="#ADD8E6"
         dark
