@@ -7,7 +7,7 @@ module.exports = {
     elements: {
         'v-btn': {
             label: 'button',
-            templates: [{
+            templates: {'v-btn-icon-3': {
                 label: 'icon #3',
                 template: {
                     tag: { name: 'v-btn' },
@@ -17,18 +17,18 @@ module.exports = {
                         props: { icon: 'mdi-numeric-3-circle-outline' },
                     }]
                 }
-            }]
+            }}
         },
         'v-col': {
             label: 'column',
-            templates: [{
+            templates: {'v-col-custom-1': {
                 label: 'v-col custom',
                 template: {
                     tag: { name: 'v-col' },
                     props: { cols: '12' },
                     children: ['col xxx']
                 }
-            }]
+            }}
         },
     }
 }
