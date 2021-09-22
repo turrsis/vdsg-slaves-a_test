@@ -12,7 +12,7 @@
 </template>
 <script>
 export default {
-    name: 'TContainer',
+    name: 'FContainer',
     props: {
         text1: {
             type: String,

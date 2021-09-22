@@ -54,15 +54,15 @@
                 </v-col>
             </v-row>
         </v-container>
-        <TContainer/>
+        <FContainer/>
     </v-sheet>
 </template>
 <script>
-import TContainer from '@/components/TContainer.vue';
+import FContainer from '@/components/FContainer.vue';
 export default {
     name: 'Home',
     components: {
-        TContainer
+        FContainer
     },
     data: () => ({
         homeStr: '***home***',
