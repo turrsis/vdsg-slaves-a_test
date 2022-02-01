@@ -1,0 +1,42 @@
+{
+  "name": "vdsg_tests_vuetify",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve:async",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint",
+    "postinstall": "call ..\\vdsg-tests-vuecli\\link-tests.bat"
+  },
+  "dependencies": {
+    "@mdi/font": "5.9.55",
+    "roboto-fontface": "*",
+    "vue": "^3.2.20",
+    "vue-router": "^4.0.10",
+    "vuetify": "^3.0.0-alpha.12",
+    "webfontloader": "^1.0.0"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "5.0.0-beta.7",
+    "@vue/cli-service": "5.0.0-beta.7",
+    "sass": "^1.38.0",
+    "sass-loader": "^10.0.0",
+    "vue-cli-plugin-vuetify": "~2.4.5",
+    "vuetify-loader": "^2.0.0-alpha.0"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead"
+  ],
+  "workspaces": [
+    "../../repo/vdsg-slave",
+    "../../repo/vdsg-common",
+    "../../repo/vdsg-server-common",
+    "../../meta/vdsg-metadata-configs",
+    "../../meta/vdsg-metadata-vuetify"
+  ],
+  "vuePlugins": {
+    "service": ["node_modules/vdsg-server-common/src/injectors/vue.config.plugin.cjs"]
+  }
+}
