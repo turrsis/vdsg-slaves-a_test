@@ -4,7 +4,7 @@
             <v-card-header>
                 <v-card-header-text>
                     <v-card-title style="width: 500px;position:relative; left: -200px;">
-                        *0123456789*Общее*0123456789*
+                        *0123456789*Общее*0123456789* BIND: {{homeStr}}
                     </v-card-title>
                 </v-card-header-text>
             </v-card-header>
@@ -14,7 +14,7 @@
                 Причина в том, что исходник преобразовывается в функции, которые собственно и генерируют браузерную разметку.
                 </p>
             </v-card-text>
-            <v-card-text>
+            <v-card-text class="redText">
                 Существует два подхода для описания компонента: декларативный в виде темплейта и императивный (jsx, React).
             </v-card-text>
             <v-card-text>
@@ -29,7 +29,7 @@
         </v-card>
         <v-container fluid>
             <v-row class="text-left" dense>
-                <v-col cols="12">
+                <v-col :cols="colsNum">
                     О верстке
                 </v-col>
                 <v-col cols="12">
@@ -67,6 +67,7 @@ export default {
         FContainer
     },
     data: () => ({
+        colsNum: '12',
         homeStr: '***home***',
         homeNum: 777,
         homeBool: true,
@@ -84,5 +85,11 @@ export default {
     })
 };
 </script>
-<style lang="less">
+<customBlock>
+    XXXXXXXXXXXX
+</customBlock>
+<style lang="scss">
+.redText {
+    color: red;
+}
 </style>
