@@ -1,8 +1,7 @@
 import { createRouter, createWebHistory } from 'vue-router';
 import Home from '../views/Home.vue';
 import HomeWrap from '../views/HomeWrap.vue';
-import testsRoutes from '../../.designer-tests/routes.js'
-
+import testsRoutes from '../../.designer-tests/routes.js';
 const routes = [{
     path: '/',
     name: 'Home',
@@ -20,8 +19,7 @@ const routes = [{
     component: () => import(
     /* webpackChunkName: "about" */
     '../views/About.vue')
-}].concat(testsRoutes)
-
+}].concat(testsRoutes);
 const router = createRouter({
     history: createWebHistory(process.env.BASE_URL),
     routes
