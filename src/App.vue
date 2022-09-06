@@ -12,7 +12,7 @@
             <v-btn icon>
                 <v-icon icon="mdi-magnify"></v-icon>
             </v-btn>
-            <v-btn>
+            <v-btn @click="onHeartClick">
                 <span>
                     heart
                 </span>
@@ -53,7 +53,12 @@ export default {
             'ao_Bool': true
         },
         appArr: ['aa-1', 'aa-2']
-    })
+    }),
+    methods: {
+        onHeartClick () {
+            alert('onHeartClick')
+        }
+    }
 };
 </script>
 <style lang="scss">
