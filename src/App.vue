@@ -40,7 +40,7 @@
         </v-footer>
     </v-app>
 </template>
-<script>
+<script lang="javascript">
 export default {
     name: 'App',
     data: () => ({
@@ -62,6 +62,9 @@ export default {
     }
 };
 </script>
+<customBlock77>
+    XXXXXXXXXXXX
+</customBlock77>
 <style lang="scss">
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
@@ -85,6 +88,6 @@ export default {
   }
 }
 </style>
-<customBlock77>
-    XXXXXXXXXXXX
-</customBlock77>
+<customBlock88>
+    ZZZZZZZZZZZZ
+</customBlock88>
