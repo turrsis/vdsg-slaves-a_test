@@ -1,14 +1,10 @@
 <template>
     <v-sheet v-designer.true>
         <v-card>
-            <v-card-header>
-                <v-card-header-text>
-                    <v-card-title style="width: 500px;position:relative; left: -200px;">
-                        *0123456789*Общее*0123456789* BIND:
-                        {{ homeStr }}
-                    </v-card-title>
-                </v-card-header-text>
-            </v-card-header>
+            <v-card-title style="width: 500px;position:relative; left: -200px;">
+                *0123456789*Общее*0123456789* BIND:
+                {{ homeStr }}
+            </v-card-title>
             <v-card-text>
                 <p>
                     В общем случае WebComponent невозможно детерминировать т.е. невозможно однозначно сопоставить исходный код с разметкой в браузере.
