@@ -4,26 +4,24 @@
             <template v-slot:img="{ props }">
                 <v-img v-bind="props" gradient="to top right, rgba(19,84,122,.5), rgba(128,208,199,.8)"></v-img>
             </template>
-            <v-app-bar-nav-icon></v-app-bar-nav-icon>
+            <v-app-bar-nav-icon icon="mdi mdi-dots-vertical"></v-app-bar-nav-icon>
             <v-app-bar-title>
                 Title
             </v-app-bar-title>
             <v-spacer></v-spacer>
-            <v-btn icon>
-                <v-icon icon="mdi-magnify"></v-icon>
-            </v-btn>
+            <v-btn icon="mdi mdi-magnify" />
             <v-btn v-on:click="onHeartClick">
                 <span>
                     heart
                 </span>
-                <v-icon icon="mdi-heart"></v-icon>
+                <v-icon icon="mdi mdi-heart"></v-icon>
             </v-btn>
             <v-btn icon>
-                <v-icon icon="mdi-numeric-1-box-multiple"></v-icon>
+                <v-icon icon="mdi mdi-numeric-1-box-multiple"></v-icon>
             </v-btn>
             <v-btn>
                 dots
-                <v-icon icon="mdi-dots-vertical"></v-icon>
+                <v-icon icon="mdi mdi-dots-vertical"></v-icon>
             </v-btn>
         </v-app-bar>
         <v-main>
