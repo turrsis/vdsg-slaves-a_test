@@ -25,39 +25,41 @@
                 Таким образом, на основании браузерной разметки, становиться возможно редактировать исходный код темплейта.
             </v-card-text>
         </v-card>
-        <v-container fluid>
-            <v-row class="text-left" dense>
-                <v-col :cols="colsNum">
-                    О верстке
-                </v-col>
-                <v-col cols="12">
-                    Для WebBuilders одной из сложностей является CSS
-                </v-col>
-                <v-col cols="12">
-                    С появлением MaterialDesign эта проблема не актуальна
-                </v-col>
-            </v-row>
-            <v-row class="text-left" dense>
-                <v-col cols="6">
-                    xxxxxxxxxxxxxxxxxxxx
-                    <!-- <v-img
-                    :aspect-ratio="16/9"
-                    src="https://cdn.vuetifyjs.com/images/parallax/material.jpg"
-                    ></v-img> -->
-                </v-col>
-                <v-col cols="6">
-                    yyyyyyyyyyyyyyyyyyyyyy
-                    <!-- <v-img
-                    :aspect-ratio="16/9"
-                    src="https://cdn.vuetifyjs.com/images/parallax/material2.jpg"
-                    ></v-img> -->
-                </v-col>
-            </v-row>
-        </v-container>
+        <v-sheet>
+            <v-container fluid>
+                <v-row class="text-left" dense>
+                    <v-col :cols="colsNum">
+                        О верстке
+                    </v-col>
+                    <v-col cols="12">
+                        Для WebBuilders одной из сложностей является CSS
+                    </v-col>
+                    <v-col cols="12">
+                        С появлением MaterialDesign эта проблема не актуальна
+                    </v-col>
+                </v-row>
+                <v-row class="text-left" dense>
+                    <v-col :cols="4">
+                        xxxxxxxxxxxxxxxxxxxx
+                        <!-- <v-img
+                        :aspect-ratio="16/9"
+                        src="https://cdn.vuetifyjs.com/images/parallax/material.jpg"
+                        ></v-img> -->
+                    </v-col>
+                    <v-col :cols="4">
+                        yyyyyyyyyyyyyyyyyyyyyy
+                        <!-- <v-img
+                        :aspect-ratio="16/9"
+                        src="https://cdn.vuetifyjs.com/images/parallax/material2.jpg"
+                        ></v-img> -->
+                    </v-col>
+                </v-row>
+            </v-container>
+        </v-sheet>
         <FContainer/>
     </v-sheet>
 </template>
-<script>
+<script lang="javascript">
 import FContainer from '@/components/FContainer.vue';
 export default {
     name: 'Home',
