@@ -25,6 +25,22 @@
                 Таким образом, на основании браузерной разметки, становиться возможно редактировать исходный код темплейта.
             </v-card-text>
         </v-card>
+        <v-card>
+            <v-card-title>
+                F.A.Q.
+            </v-card-title>
+            <v-expansion-panels variant="accordion">
+                <v-expansion-panel title="Поддерживается ли Серверный рендеринг?" text="Да, поддерживается"></v-expansion-panel>
+                <v-expansion-panel>
+                    <v-expansion-panel-title>
+                        xxx
+                    </v-expansion-panel-title>
+                    <v-expansion-panel-text>
+                        ZZZ
+                    </v-expansion-panel-text>
+                </v-expansion-panel>
+            </v-expansion-panels>
+        </v-card>
         <v-sheet>
             <v-container fluid>
                 <v-row class="text-left" dense>
@@ -40,22 +56,37 @@
                 </v-row>
                 <v-row class="text-left" dense>
                     <v-col :cols="4">
-                        xxxxxxxxxxxxxxxxxxxx
-                        <!-- <v-img
-                        :aspect-ratio="16/9"
-                        src="https://cdn.vuetifyjs.com/images/parallax/material.jpg"
-                        ></v-img> -->
+                        <v-img :aspect-ratio="16/9" src="dogs/dog_1.png"></v-img>
                     </v-col>
                     <v-col :cols="4">
-                        yyyyyyyyyyyyyyyyyyyyyy
-                        <!-- <v-img
-                        :aspect-ratio="16/9"
-                        src="https://cdn.vuetifyjs.com/images/parallax/material2.jpg"
-                        ></v-img> -->
+                        <v-img :aspect-ratio="16/9" src="dogs/dog_2.png"></v-img>
                     </v-col>
                 </v-row>
             </v-container>
         </v-sheet>
+        <v-carousel :continuous="false" :show-arrows="false" hide-delimiter-background delimiter-icon="mdi-square" height="300">
+            <v-carousel-item src="dogs/dog_0.png" cover></v-carousel-item>
+            <v-carousel-item src="dogs/dog_1.png" cover>
+                <div class="d-flex fill-height justify-start align-start">
+                    Second Slide in Div
+                </div>
+            </v-carousel-item>
+            <v-carousel-item>
+                <v-sheet color="green" height="100%" tile>
+                    <div class="d-flex fill-height justify-center align-center text-h2">
+                        Third Slide in v-sheet
+                    </div>
+                </v-sheet>
+            </v-carousel-item>
+            <v-carousel-item>
+                <v-card color="blue" height="100%" tile>
+                    <div class="d-flex fill-height justify-center align-center text-h2">
+                        Fourth Slide in v-card
+                    </div>
+                </v-card>
+            </v-carousel-item>
+        </v-carousel>
+        <v-img :aspect-ratio="1/1" cover src="https://cdn.vuetifyjs.com/images/parallax/material.jpg"/>
         <FContainer/>
     </v-sheet>
 </template>

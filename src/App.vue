@@ -9,7 +9,7 @@
                 Title
             </v-app-bar-title>
             <v-spacer></v-spacer>
-            <v-btn icon="mdi mdi-magnify" />
+            <v-btn icon="mdi mdi-magnify"/>
             <v-btn v-on:click="onHeartClick">
                 <span>
                     heart
