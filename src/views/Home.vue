@@ -44,7 +44,7 @@
         <v-sheet>
             <v-container fluid>
                 <v-row class="text-left" dense>
-                    <v-col :cols="colsNum">
+                    <v-col>
                         О верстке
                     </v-col>
                     <v-col cols="12">
@@ -59,7 +59,7 @@
                         <v-img :aspect-ratio="16/9" src="dogs/dog_1.png"></v-img>
                     </v-col>
                     <v-col :cols="4">
-                        <v-img :aspect-ratio="16/9" src="dogs/dog_2.png"></v-img>
+                        <v-img :aspect-ratio="16/9" src="dogs/dog_2.bmp"></v-img>
                     </v-col>
                 </v-row>
             </v-container>
@@ -90,7 +90,7 @@
         <FContainer/>
     </v-sheet>
 </template>
-<script lang="javascript">
+<script>
 import FContainer from '@/components/FContainer.vue';
 export default {
     name: 'Home',
@@ -98,7 +98,18 @@ export default {
         FContainer
     },
     data: () => ({
-        colsNum: '12',
+        colsNum_01: 1,
+        colsNum_02: '2',
+        colsNum_03: '3',
+        colsNum_04: '4',
+        colsNum_05: '5',
+        colsNum_06: '6',
+        colsNum_07: '7',
+        colsNum_08: '8',
+        colsNum_09: '9',
+        colsNum_10: '10',
+        colsNum_11: '11',
+        colsNum_12: '12',
         homeStr: '***home***',
         homeNum: 777,
         homeBool: true,

@@ -10,7 +10,7 @@
             </v-app-bar-title>
             <v-spacer></v-spacer>
             <v-btn icon="mdi mdi-magnify"/>
-            <v-btn v-on:click="onHeartClick">
+            <v-btn v-on:click.right.prevent="method_1" v-on:click.left="method_2">
                 <span>
                     heart
                 </span>
@@ -38,7 +38,7 @@
         </v-footer>
     </v-app>
 </template>
-<script lang="javascript">
+<script>
 export default {
     name: 'App',
     data: () => ({
@@ -53,8 +53,16 @@ export default {
         appArr: ['aa-1', 'aa-2']
     }),
     methods: {
-        onHeartClick() {
-            alert('onHeartClick');
+        method_1() {
+            console.log('method_1');
+        },
+
+        method_2(p1, p2) {
+            console.log('method_2', p1, p2);
+        },
+
+        method_3(e) {
+            console.log('method_3', e);
         }
 
     }
