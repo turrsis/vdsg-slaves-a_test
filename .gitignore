@@ -5,7 +5,7 @@ node_modules
 # common designer ui tests
 .designer-tests
 
-.designer-history
+.designer-save-points
 
 # local env files
 .env.local
