@@ -56,7 +56,7 @@
                 </v-row>
                 <v-row class="text-left" dense>
                     <v-col :cols="4">
-                        <v-img :aspect-ratio="16/9" src="dogs/dog_1.png"></v-img>
+                        <v-img src="dogs/dog_1.png"></v-img>
                     </v-col>
                     <v-col :cols="4">
                         <v-img :aspect-ratio="16/9" src="dogs/dog_2.bmp"></v-img>
