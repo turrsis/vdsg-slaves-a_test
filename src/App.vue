@@ -19,7 +19,7 @@
             <v-btn icon>
                 <v-icon icon="mdi mdi-numeric-1-box-multiple"></v-icon>
             </v-btn>
-            <v-btn>
+            <v-btn class="rounded-pill" :class="{ 'xxxxxxxx': true }">
                 dots
                 <v-icon icon="mdi mdi-dots-vertical"></v-icon>
             </v-btn>
