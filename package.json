@@ -6,7 +6,7 @@
     "serve": "vue-cli-service serve:async",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
-    "postinstall": "call ..\\vdsg-tests-vuecli\\link-tests.bat"
+    "postinstall": "call ..\\..\\slaves-tests\\vdsg-tests-vuecli\\link-tests.bat"
   },
   "dependencies": {
     "@mdi/font": "5.9.55",
