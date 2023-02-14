@@ -1,10 +1,14 @@
 export default {
     key: 'vdsg-tests-vuetify',
     label: 'vuetify tests',
-    tests: {
-        uiSpecsPath: '.designer-tests/.spec',
+    app: {
+        tests: {
+            uiSpecsPath: '.designer-tests/.spec',
+        },
+        router: {
+            entryPoint: 'src/main.js',
+        },
     },
-    routesEntryPoint: 'src/main.js',
     originhost: 'http://localhost:8080',
     server: {
         host: 'localhost',
