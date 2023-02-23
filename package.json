@@ -38,6 +38,8 @@
     "../../meta/vdsg-metadata-vuetify"
   ],
   "vuePlugins": {
-    "service": ["node_modules/vdsg-server-common/src/injectors/vue.config.plugin.cjs"]
+    "service": [
+      "node_modules/vdsg-server-common/src/injectors/vue-cli/vue.config.plugin.cjs"
+    ]
   }
 }
