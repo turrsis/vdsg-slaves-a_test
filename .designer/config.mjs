@@ -5,8 +5,11 @@ export default {
         tests: {
             uiSpecsPath: '.designer-tests/.spec',
         },
+        pages: {
+            pathPrefix: 'src/views/',
+        },
         router: {
-            entryPoint: 'src/main.js',
+            entryPoint: 'src/router/index.js',
         },
     },
     originhost: 'http://localhost:8080',
