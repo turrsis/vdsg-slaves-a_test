@@ -2,7 +2,7 @@ import metadataTests from 'vdsg-metadata-tests'
 import metadataConfigs from 'vdsg-metadata-configs'
 import metadataVuetify from 'vdsg-metadata-vuetify'
 
-import templates from './metadata.templates.mjs'
+import templates from './elements-templates/index.mjs'
 
 export default [
     metadataTests,
