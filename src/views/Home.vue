@@ -56,17 +56,17 @@
                 </v-row>
                 <v-row class="text-left" dense>
                     <v-col :cols="4">
-                        <v-img src="dogs/dog_1.png"></v-img>
+                        <v-img src="dogs/dog_wings_black.png"></v-img>
                     </v-col>
                     <v-col :cols="4">
-                        <v-img :aspect-ratio="1/1" src="dogs/dog_2.bmp"></v-img>
+                        <v-img :aspect-ratio="1/1" src="dogs/dog_wings_white.bmp"></v-img>
                     </v-col>
                 </v-row>
             </v-container>
         </v-sheet>
         <v-carousel :continuous="false" :show-arrows="false" hide-delimiter-background delimiter-icon="mdi-square" height="300">
-            <v-carousel-item src="dogs/dog_0.png" cover></v-carousel-item>
-            <v-carousel-item src="dogs/dog_1.png" cover>
+            <v-carousel-item src="dogs/dog_white.png"></v-carousel-item>
+            <v-carousel-item src="dogs/dog_red.png">
                 <div class="d-flex fill-height justify-start align-start">
                     Second Slide in Div
                 </div>
