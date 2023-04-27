@@ -9,7 +9,7 @@
     "postinstall": "call ..\\..\\slaves-tests\\vdsg-tests-vuecli\\link-tests.bat"
   },
   "dependencies": {
-    "@mdi/font": "5.9.55",
+    "@mdi/font": "7.2.96",
     "roboto-fontface": "*",
     "vue": "3.2.39",
     "vue-router": "^4.1.6",
@@ -35,7 +35,8 @@
     "../../repo/vdsg-server-common",
     "../../meta/vdsg-metadata-tests",
     "../../meta/vdsg-metadata-configs",
-    "../../meta/vdsg-metadata-vuetify"
+    "../../meta/vdsg-metadata-vuetify",
+    "../../meta/vdsg-metadata-vuetify-user"
   ],
   "vuePlugins": {
     "service": [

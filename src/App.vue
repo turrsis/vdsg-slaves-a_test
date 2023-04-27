@@ -1,42 +1,40 @@
 <template>
-    <v-app v-designer.true :full-height="true" DESIGNER_ROOT_APP_NODE="DESIGNER_ROOT_APP_NODE">
-        <v-app-bar flat virt-attr-test="q3" absolute color="#ADD8E6" dark shrink-on-scroll src="https://picsum.photos/1920/1080?random" scroll-target="#scrolling-techniques-2">
-            <template v-slot:img="{ props }">
-                <v-img v-bind="props" gradient="to top right, rgba(19,84,122,.5), rgba(128,208,199,.8)"></v-img>
-            </template>
-            <v-app-bar-nav-icon icon="mdi mdi-dots-vertical"></v-app-bar-nav-icon>
-            <v-app-bar-title>
-                Title
-            </v-app-bar-title>
-            <v-spacer></v-spacer>
-            <v-btn icon="mdi mdi-magnify"/>
-            <v-btn v-on:click.right.prevent="method_1" v-on:click.left="method_2">
-                <span>
-                    heart
-                </span>
-                <v-icon icon="mdi mdi-heart"></v-icon>
-            </v-btn>
-            <v-btn icon>
-                <v-icon icon="mdi mdi-numeric-1-box-multiple"></v-icon>
-            </v-btn>
-            <v-btn class="rounded-pill" :class="{ 'xxxxxxxx': true }">
-                dots
-                <v-icon icon="mdi mdi-dots-vertical"></v-icon>
-            </v-btn>
-        </v-app-bar>
-        <v-main>
-            <router-view/>
-        </v-main>
-        <v-footer max-height="60px">
-            <v-col class="text-center" cols="12">
-                {{ new Date().getFullYear() }}
-                —
-                <strong>
-                    Turrsis
-                </strong>
-            </v-col>
-        </v-footer>
-    </v-app>
+    <v-row v-designer.true :dense="true">
+        <v-col cols="1"/>
+        <v-col cols="10">
+            <v-app :full-height="true">
+                <v-app-bar absolute flat dark :border="true" shrink-on-scroll src="https://picsum.photos/1920/1080?random" scroll-target="#scrolling-techniques-2">
+                    <template v-slot:img="{ props }">
+                        <v-img v-bind="props" gradient="to top right, rgba(19,84,122,.5), rgba(128,208,199,.8)"></v-img>
+                    </template>
+                    <v-app-bar-nav-icon icon="mdi mdi-dots-vertical"></v-app-bar-nav-icon>
+                    <v-app-bar-title>
+                        Site Creator
+                    </v-app-bar-title>
+                    <v-spacer></v-spacer>
+                    <v-btn class="rounded-pill" variant="outlined">
+                        About as..
+                    </v-btn>
+                    <v-btn class="rounded-pill" variant="outlined">
+                        Contacts
+                    </v-btn>
+                </v-app-bar>
+                <v-main>
+                    <router-view class="mt-2"/>
+                </v-main>
+                <v-footer :elevation="2">
+                    <v-col class="text-center" cols="12">
+                        {{ new Date().getFullYear() }}
+                        —
+                        <strong>
+                            Turrsis
+                        </strong>
+                    </v-col>
+                </v-footer>
+            </v-app>
+        </v-col>
+        <v-col cols="1"/>
+    </v-row>
 </template>
 <script>
 export default {
