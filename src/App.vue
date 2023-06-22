@@ -1,28 +1,23 @@
 <template>
     <v-row v-designer.true :dense="true">
-        <v-col cols="1"/>
-        <v-col cols="10">
+        <v-col class="bg-grey-lighten-5" md="2" :cols="1" :sm="2" :lg="2" :xl="3"/>
+        <v-col md="8" :cols="10" :sm="8" :lg="8" :xl="6">
             <v-app :full-height="true">
-                <v-app-bar absolute flat dark :border="true" shrink-on-scroll src="https://picsum.photos/1920/1080?random" scroll-target="#scrolling-techniques-2">
-                    <template v-slot:img="{ props }">
-                        <v-img v-bind="props" gradient="to top right, rgba(19,84,122,.5), rgba(128,208,199,.8)"></v-img>
-                    </template>
-                    <v-app-bar-nav-icon icon="mdi mdi-dots-vertical"></v-app-bar-nav-icon>
+                <v-app-bar flat dark shrink-on-scroll :elevation="4" rounded="lg" :absolute="true">
                     <v-app-bar-title>
-                        Site Creator
+                        Site Builder for any skills
                     </v-app-bar-title>
-                    <v-spacer></v-spacer>
-                    <v-btn class="rounded-pill" variant="outlined">
+                    <v-btn class="rounded-pill" variant="elevated" density="comfortable">
                         About as..
                     </v-btn>
-                    <v-btn class="rounded-pill" variant="outlined">
+                    <v-btn class="rounded-pill" variant="elevated" density="comfortable">
                         Contacts
                     </v-btn>
                 </v-app-bar>
                 <v-main>
                     <router-view class="mt-2"/>
                 </v-main>
-                <v-footer :elevation="2">
+                <v-footer :elevation="0">
                     <v-col class="text-center" cols="12">
                         {{ new Date().getFullYear() }}
                         —
@@ -33,7 +28,7 @@
                 </v-footer>
             </v-app>
         </v-col>
-        <v-col cols="1"/>
+        <v-col class="bg-grey-lighten-5" md="2" :cols="1" :sm="2" :lg="2" :xl="3"/>
     </v-row>
 </template>
 <script>
