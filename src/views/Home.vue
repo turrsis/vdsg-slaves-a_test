@@ -2,16 +2,16 @@
     <v-sheet v-designer.true>
         <v-container :fluid="true">
             <v-row :dense="true">
-                <v-col cols="12" :order="2" :sm="12" md="6" :order-sm="2" order-md="1">
+                <v-col cols="12" :order="2" :sm="12" md="6" :order-sm="1" order-md="2">
                     <v-row :no-gutters="true" style="min-height:100%">
                         <v-col :cols="12">
-                            <v-list density="compact">
-                                <VListSubheader>
-                                    three in one
-                                </VListSubheader>
-                                <VListItem class="text-left" prepend-icon="mdi mdi-check">
-                                    No Code - no design or coding skills
-                                </VListItem>
+                            <v-list density="compact" :lines="false">
+                                <h3>
+                                    No more choosing between website builder and development
+                                </h3>
+                                <v-list-item class="text-left" prepend-icon="mdi mdi-check">
+                                    No Code - no design or coding skills users
+                                </v-list-item>
                                 <v-list-item class="text-left" prepend-icon="mdi mdi-check">
                                     Low Code - for power users 
                                 </v-list-item>
@@ -27,8 +27,8 @@
                         </v-col>
                     </v-row>
                 </v-col>
-                <v-col cols="12" :order="1" :sm="12" md="6" :order-sm="1" order-md="2">
-                    <VImg src="shortDemo2.gif"></VImg>
+                <v-col cols="12" :order="1" :sm="12" md="6" :order-sm="2" order-md="1">
+                    <v-img src="shortDemo2.gif"></v-img>
                 </v-col>
             </v-row>
         </v-container>
