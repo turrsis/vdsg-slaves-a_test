@@ -1,35 +1,37 @@
 <template>
-    <v-row v-designer.true :dense="true">
-        <v-col class="bg-grey-lighten-5" md="2" :cols="1" :sm="2" :lg="2" :xl="3"/>
-        <v-col md="8" :cols="10" :sm="8" :lg="8" :xl="6">
-            <v-app :full-height="true">
-                <v-app-bar flat dark shrink-on-scroll :elevation="4" rounded="lg" :absolute="true">
-                    <v-app-bar-title>
-                        Site Builder for any skills
-                    </v-app-bar-title>
-                    <v-btn class="rounded-pill" variant="elevated" density="comfortable">
-                        About as..
-                    </v-btn>
-                    <v-btn class="rounded-pill" variant="elevated" density="comfortable">
-                        Contacts
-                    </v-btn>
-                </v-app-bar>
-                <v-main>
-                    <router-view class="mt-2"/>
-                </v-main>
-                <v-footer :elevation="0">
-                    <v-col class="text-center" cols="12">
-                        {{ new Date().getFullYear() }}
-                        —
-                        <strong>
-                            Turrsis
-                        </strong>
-                    </v-col>
-                </v-footer>
-            </v-app>
-        </v-col>
-        <v-col class="bg-grey-lighten-5" md="2" :cols="1" :sm="2" :lg="2" :xl="3"/>
-    </v-row>
+    <v-container v-designer.true :fluid="true" class="pa-0">
+        <v-row :dense="true">
+            <v-col class="bg-grey-lighten-5" md="2" :cols="1" :sm="2" :lg="2" :xl="3"/>
+            <v-col md="8" :cols="10" :sm="8" :lg="8" :xl="6">
+                <v-app :full-height="true">
+                    <v-app-bar flat dark shrink-on-scroll :elevation="4" rounded="lg" :absolute="true">
+                        <v-app-bar-title>
+                            Site Builder for any skills
+                        </v-app-bar-title>
+                        <v-btn class="rounded-pill" variant="elevated" density="comfortable">
+                            About as..
+                        </v-btn>
+                        <v-btn class="rounded-pill" variant="elevated" density="comfortable" @click="onContactsClick">
+                            Contacts
+                        </v-btn>
+                    </v-app-bar>
+                    <v-main>
+                        <router-view class="mt-2"/>
+                    </v-main>
+                    <v-footer :elevation="0">
+                        <v-col class="text-center" cols="12">
+                            {{ new Date().getFullYear() }}
+                            —
+                            <strong>
+                                Turrsis
+                            </strong>
+                        </v-col>
+                    </v-footer>
+                </v-app>
+            </v-col>
+            <v-col class="bg-grey-lighten-5" md="2" :cols="1" :sm="2" :lg="2" :xl="3"/>
+        </v-row>
+    </v-container>
 </template>
 <script>
 export default {
@@ -46,8 +48,8 @@ export default {
         appArr: ['aa-1', 'aa-2']
     }),
     methods: {
-        method_1() {
-            console.log('method_1');
+        onContactsClick() {
+            console.log('Contacts button clicking !!!');
         },
 
         method_2(p1, p2) {
