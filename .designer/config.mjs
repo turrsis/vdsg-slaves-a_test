@@ -14,6 +14,7 @@ export default {
     },
     originhost: 'http://localhost:8080',
     server: {
+        protocol: 'http:',
         host: 'localhost',
         port: 8086,
     }
