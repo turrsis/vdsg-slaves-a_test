@@ -8,11 +8,11 @@
                         <v-app-bar-title>
                             Site Builder for any skills
                         </v-app-bar-title>
-                        <v-btn class="rounded-pill" variant="elevated" density="comfortable">
-                            About as..
-                        </v-btn>
                         <v-btn class="rounded-pill" variant="elevated" density="comfortable" @click="onContactsClick">
                             Contacts
+                        </v-btn>
+                        <v-btn class="rounded-pill" variant="elevated" density="comfortable" to="/about">
+                            About as..
                         </v-btn>
                     </v-app-bar>
                     <v-main>
@@ -51,15 +51,12 @@ export default {
         onContactsClick() {
             console.log('Contacts button clicking !!!');
         },
-
         method_2(p1, p2) {
             console.log('method_2', p1, p2);
         },
-
         method_3(e) {
             console.log('method_3', e);
         }
-
     }
 };
 </script>
